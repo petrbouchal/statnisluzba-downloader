@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+/usr/local/bin/Rscript -e "setwd('~/cpers/statnisluzba-downloader'); targets::tar_make()"
+
+# CRON entry, add by running `env EDITOR=micro crontab -e`
+# !/usr/bin/env zsh
+# PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/clitools
+# 0 */4 * * * cronic ~/cpers/statnisluzba-downloader/build
